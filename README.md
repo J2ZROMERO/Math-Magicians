@@ -7,8 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React
 - Linters
 
-Live Demo (if available)
-[Live Demo Link]()
 
 ## Getting Started
 
