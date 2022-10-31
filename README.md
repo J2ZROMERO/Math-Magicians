@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React
 - Linters
 
+# [Live view](https://63605716e0908c0b51cd5f56--sage-gaufre-cb8c5e.netlify.app/)
 
 ## Getting Started
 
