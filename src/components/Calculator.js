@@ -17,7 +17,6 @@ export default class calculator extends React.Component {
   }
 
   handleClick = (e) => {
-    console.log(e.target.textContent);
     const val = calculate(this.state, e.target.textContent);
     this.setState(val);
   }
