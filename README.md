@@ -7,7 +7,7 @@ we have implemented:
 - lifecycle methods
 - lift state up
 - hooks
-all of those with react approach
+- all of those with react approach
 
 # Built With
 - Gitflow
