@@ -6,6 +6,7 @@ we have implemented:
 - state and props
 - lifecycle methods
 - lift state up
+- hooks
 all of those with react approach
 
 # Built With
