@@ -14,7 +14,7 @@ we have implemented:
 - React
 - Linters
 
-# [Live view](https://63605716e0908c0b51cd5f56--sage-gaufre-cb8c5e.netlify.app/)
+# [Live view](https://deploy-preview-5--sage-gaufre-cb8c5e.netlify.app/)
 
 ## Getting Started
 
