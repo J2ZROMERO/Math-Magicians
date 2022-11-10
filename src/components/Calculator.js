@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import '../index.css';
 import Header from './Header';
 import calculate from '../logic/calculate';
+import '../style.css';
 
 const Calculator = () => {
   const [data, setdata] = useState({
