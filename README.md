@@ -7,6 +7,7 @@ we have implemented:
 - lifecycle methods
 - lift state up
 - hooks
+- Routers React
 - all of those with react approach
 
 # Built With
