@@ -5,8 +5,6 @@ import Calculator from './Calculator';
 import Quote from '../pages/Quote';
 import Home from '../pages/Home';
 
-import '../style.css';
-
 export default class AppCalculator extends React.Component {
   static showCalculator() {
     const root = ReactDOM.createRoot(document.getElementById('root'));
