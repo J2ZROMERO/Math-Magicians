@@ -1,4 +1,4 @@
 import AppCalculator from './components/App';
-import './style.css';
+import './index.css';
 
 AppCalculator.showCalculator();

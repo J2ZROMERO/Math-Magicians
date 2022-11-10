@@ -6,7 +6,7 @@ const Quote = () => (
   <>
     <Header />
     <div>
-      <p>
+      <p style={{ fontSize: '3em' }}>
         Mathematics is not about number, equations, computacions
         or algorithms: it is about understanding. -William Paul Thruston
       </p>
