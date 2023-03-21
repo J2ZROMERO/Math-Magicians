@@ -1,3 +1,6 @@
+[Video demo](https://user-images.githubusercontent.com/63516282/226737068-da3ee18d-72de-4fcb-ac35-9fa02dab08c5.mp4)
+
+
 # Getting Started with Create React App
 
 This is an app calculator that performs basic operations, [+ , - , /,  X , +/- , %], it was bootstrapped with React tool.
