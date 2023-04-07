@@ -53,6 +53,8 @@
 
 - **[[Big js dependency](https://www.npmjs.com/package/big-js)]**
 - **[State and props]**
+- **[Webpack]**
+- **[React]**
 - **[Lifecycle methods]**
 - **[Lift state up]**
 - **[Hooks]**
