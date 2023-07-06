@@ -49,16 +49,16 @@
 
 ### Key Features <a name="key-features"></a>
 
-> The next features were added in to the project.
+> The next features were added into the project.
 
-- **[[Big js dependency](https://www.npmjs.com/package/big-js)]**
-- **[State and props]**
-- **[Webpack]**
-- **[React]**
-- **[Lifecycle methods]**
-- **[Lift state up]**
-- **[Hooks]**
-- **[React Routes]**
+- [Big js dependency](https://www.npmjs.com/package/big-js)
+- State and props
+- Webpack
+- React
+- Lifecycle methods
+- Lift state up
+- Hooks
+- React Routes
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
