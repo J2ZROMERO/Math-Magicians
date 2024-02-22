@@ -1,5 +1,8 @@
+/* stylelint-disable */
+
 /* The following line can be included in a src/App.scss */
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
 /* The following block can be included in a custom.scss */
 
 * {
@@ -7,46 +10,36 @@
   font-size: 1rem;
 }
 
-.btn{
+.btn {
   width: 100%;
   height: 100%;
-  
 }
-// @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-#root{
+#root {
   height: 100vh;
-
-
 }
 
-.calc_container-sub{
+.calc_container-sub {
   height: 75vh;
-  
 }
 
-
-.col{
-
+.col {
   @include media-breakpoint-up(sm) {
-    
     & > * {
       font-size: 2rem;
     }
   }
 
   @include media-breakpoint-down(sm) {
-    
     & > * {
       font-size: 1.2rem;
     }
   }
 }
 
-.calc_container{
-
-  
+.calc_container {
   height: inherit;
+
   @include media-breakpoint-up(sm) {
     width: 75vh;
   }
@@ -57,6 +50,5 @@
     &-sub {
       height: 80%;
     }
-
-  }  
   }
+}
