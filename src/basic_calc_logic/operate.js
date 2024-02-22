@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Big from 'big.js';
 
 export default function operate(numberOne, numberTwo, operation) {
@@ -9,10 +10,23 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === '-') {
     return one.minus(two).toString();
   }
-  if (operation === 'x') {
+  if (operation === 'X') {
     return one.times(two).toString();
   }
-  if (operation === '÷') {
+  if (operation === 'Mod') {
+    return one.mod(two).toString();
+  }
+  if (operation === 'Pow') {
+      
+    return one.pow(two.c[0]).toString();
+  }
+  if (operation === '%') {
+     
+    let result = (one*two)/100
+     
+    return result;
+  }
+  if (operation === '/') {
     try {
       return one.div(two).toString();
     } catch (err) {

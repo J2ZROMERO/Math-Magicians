@@ -1,3 +1,4 @@
+/* eslint-disable */
 import operate from './operate';
 
 function isNumber(item) {
@@ -14,14 +15,17 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
+  
   if (buttonName === 'AC') {
     return {
-      total: null,
+      total: 0,
       next: null,
       operation: null,
     };
   }
 
+  
+  
   if (isNumber(buttonName)) {
     if (buttonName === '0' && obj.next === '0') {
       return {};

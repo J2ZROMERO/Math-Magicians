@@ -1,33 +1,56 @@
 /* eslint-disable */
+import { useState } from "react";
 import { Row, Col, Container, Form } from "react-bootstrap";
-
+import calculate from '../basic_calc_logic/calculate.js'
 function Basic() {
+
+  const [data, setdata] = useState({
+    total: null,
+    next: 0,
+    operation: '',
+  });
+
+  const handleClick = (e) => {
+    const val = calculate(data, e.target.textContent);
+    setdata(val);
+  };
+
+  const { next, operation, total } = data;
+  let valfinal = '';
+
+  valfinal = next;
+   
+  if (next === null && operation === null) {
+    valfinal = total;
+  }
+
   return (
     <Container className=" pt-5 calc_container">
       <Container className="container calc_container-sub d-flex justify-content-center flex-wrap">
-        <Form.Control className="text-end fs-1 " type="text" value="0" />
+      
+        <Form.Control className="form_display text-end fs-1 " type="text" Value={valfinal} />
 
         <Row className="w-100 text-center gx-2 pt-2">
           <Col class="col col-3">
             <button
               className="btn btn-danger btn-block"
-              onClick="appendToDisplay('7')"
+              onClick={handleClick}
             >
-              On
+              AC
             </button>
           </Col>
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('7')"
+              onClick={handleClick}
             >
-              mod
+              Mod
             </button>
           </Col>
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('7')"
+              onClick={handleClick}
             >
               %
             </button>
@@ -35,7 +58,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-primary btn-block"
-              onClick="setOperator('+')"
+              onClick={handleClick}
             >
               X
             </button>
@@ -46,7 +69,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('7')"
+              onClick={handleClick}
             >
               7
             </button>
@@ -54,7 +77,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('8')"
+              onClick={handleClick}
             >
               8
             </button>
@@ -62,7 +85,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('9')"
+              onClick={handleClick}
             >
               9
             </button>
@@ -70,7 +93,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-primary btn-block"
-              onClick="setOperator('+')"
+              onClick={handleClick}
             >
               /
             </button>
@@ -81,7 +104,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('7')"
+              onClick={handleClick}
             >
               4
             </button>
@@ -89,7 +112,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('8')"
+              onClick={handleClick}
             >
               5
             </button>
@@ -97,7 +120,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('9')"
+              onClick={handleClick}             
             >
               6
             </button>
@@ -105,7 +128,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-primary btn-block"
-              onClick="setOperator('+')"
+              onClick={handleClick}
             >
               +
             </button>
@@ -115,7 +138,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('7')"
+              onClick={handleClick}
             >
               1
             </button>
@@ -123,7 +146,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('8')"
+              onClick={handleClick}
             >
               2
             </button>
@@ -131,7 +154,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('9')"
+              onClick={handleClick}
             >
               3
             </button>
@@ -139,7 +162,7 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-primary btn-block"
-              onClick="setOperator('+')"
+              onClick={handleClick}
             >
               -
             </button>
@@ -150,15 +173,15 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('9')"
+              onClick={handleClick}
             >
-              X2
+              Pow
             </button>
           </Col>
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('9')"
+              onClick={handleClick}
             >
               0
             </button>
@@ -166,17 +189,21 @@ function Basic() {
           <Col class="col col-3">
             <button
               className="btn btn-secondary btn-block"
-              onClick="appendToDisplay('9')"
+              onClick={handleClick}
             >
               .
             </button>
           </Col>
           <Col class="col col-3">
-            <button className="btn btn-success btn-block" onClick="calculate()">
+            <button className="btn btn-success btn-block" onClick={handleClick}>
               =
             </button>
           </Col>
+          
+          
+
         </Row>
+      
       </Container>
     </Container>
   );
